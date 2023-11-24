@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <title>a website</title>
+
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../website_QK/lightbox_dist/css/lightbox.min.css">
+  <style>
+    body {
+      background-color:#404040; 
+      background-image:url(../website_QK/img/sky_main.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      cursor: url(../website_QK/img/cursor_GSOS.png), auto;
+    }
+    
+    p, span {
+      padding-left:5px; 
+      color:#8c8c8c; 
+      text-shadow:1px 1px 0 #000000;
+      font-size:15px;  
+      font-family:Arial, Helvetica;
+    }
+    
+    .border {
+      border-style:inset;
+    }
+
+    a:link {
+      color: lightblue;
+    }
+
+    a:visited {
+      color: darkblue;
+    }
+
+    .img_center {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:20%;
+      height:auto;
+    }
+    
+    .center_content{
+      position:absolute; 
+      top:50%; 
+      left:50%; 
+      transform:translate(-50%, -50%);
+    }
+    .center_content_alt{
+      position:absolute; 
+      top:30%; 
+      left:50%; 
+      transform:translate(-50%, -50%);
+    }
+     
+    .div_container_WEB{
+      display:inline-block;
+      overflow:auto;
+      width:100%;
+      /* set width to 100% for page view, 500px for container view */
+      height:500%;
+    }
+
+    .div_ABOUT{
+      position:static;
+      padding:5px;
+      margin:5% 10% 5% 10%;
+      background-color:#1a1a1a;
+      width:200px; 
+    }
+    .div_ABOUT_CARD{
+      position:relative; 
+      background-color:#1a1a1a;
+      width:200px; 
+      left:40px;
+    }    
+    .div_ABOUT_CARD p{
+      background-color:#404040;
+      text-align:left;
+    }
+
+    .div_container_MISC{ 
+      position:relative;
+      display:flex;
+      flex-flow: column wrap;
+      overflow:scroll;
+      padding:5px;
+      margin:0% 5% 5% 5%;
+      border-style:inset;
+      border-width:thick;
+      background-color:#5a5a5a; 
+      width:360px;
+      height:350px;
+    }
+    .div_MISC{
+      position:relative;
+      overflow:clip;
+      margin:20px 5px 20px 40px;
+      background-color:#4a4a4a; 
+      width:120px; 
+      height:120px; 
+    }
+    .div_MISC_desc{
+      position:static;
+      overflow:auto;
+      margin-top:70px;
+      background-color:#4a4a4a; 
+      width:120px; 
+      height:50px; 
+    }
+
+    .div_wrap {
+      position:relative;
+      margin:35px 10px 10px 10%;
+      border:0px;
+    }
+    .div_disp {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 100, 150, 0.70);
+      color: #ffffff;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .2s, visibility .2s;
+    }
+    .div_wrap:hover .div_disp {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  </style>
+  </head>
+  
+  <body>
+    <div class ="div_container_WEB">
+        <p style ="border-style: inset; text-align: center;">Welcome to the...
+        <br>Creative Content Garbage Center
+        </p>
+		
+        <div style = "display:flex; flex-direction:row; justify-content:center; margin: 0px;">
+        <!-- section 1-->
+        <div class ="div_ABOUT">
+        <p>Hello. I'm tvstar1999.
+        </p>
+
+        <div class ="div_ABOUT_CARD">
+        <p>@an general hobbyist and a immature pile of mass.
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>@24/she/her/they
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>@tv or star. numbers are fine, too.
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>@girl boy*schizoposting*fantasia enthusiasm. 
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p><a href="https://tvstar1999.carrd.co/">Social Link</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>
+        <br><a href=""></a>
+        </p>
+        </div>
+        
+        <!--section end-->
+        </div>
+
+
+
+        <!--section 2-->
+        <div class ="div_ABOUT">
+        <p>Selective Creative Works
+        <br>
+        </p>
+        
+        <div class ="div_ABOUT_CARD">
+        <p>Interactive:
+        <br><a href="https://world-machine-guide.carrd.co/">World Machine</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>Writing: <br>Codex Stumilus
+        <br><a href="https://www.wattpad.com/story/346430311-a-writing-codex-stimulus">Wattpad</a>
+        <br><a href="https://docs.google.com/document/d/1bTU9w1H0KAwmTNifKwngIU1SNMEiusQKbTQMzHlPNjU/edit?usp=sharing">Google Document</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>Writing: <br>Of Fake Game Screens; A Reflection
+        <br><a href="https://www.wattpad.com/story/351548239-of-fake-game-screens-a-reflection">Wattpad</a>
+        <br><a href="https://docs.google.com/document/d/1AVmPPL-8x4oXpFYuV0F4DLUF3v7BaZR0AvSDfaGeavM/edit?usp=sharing">Google Document</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>Video Game:
+        <br><a href="https://tvstar1999.itch.io/the-myth-of-awakening">The Myth Of Awakening</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>Video Game:
+        <br><a href="https://tvstar1999.itch.io/life-cycle">LIFE CYCLE</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>Video Game:
+        <br><a href="https://tvstar1999.itch.io/routine-life">Routine Life</a>
+        </p>
+        </div>
+        <div class ="div_ABOUT_CARD">
+        <p>
+        <br><a href=""></a>
+        </p>
+        </div>
+        
+        <!--style div end-->
+        </div>
+
+        <!--section end-->
+        </div>
+
+
+
+        <!--section div-->
+        <div style = "display:flex; flex-direction:row; justify-content:center; margin: 0px;">
+
+        <!--section 3-->
+        <div class="div_container_MISC">
+        <div class="div_MISC">
+        <p>Selective Expression: Pixel Art</p>
+        </div>
+
+        <div class="div_MISC">
+        <img class="center_content" src="../website_QK/img/img_cat.png" width="150" height="150">
+        </div>
+
+        <!--MISC1-->
+        <div class="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+		
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_famicom.png" data-lightbox="image-1" data-title="famicom">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_famicom.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of a Family Comupter</p>
+        </div>
+
+        <!--MISC2-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_commodore_PET.png" data-lightbox="image-1" data-title="commodore PET">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_commodore_PET.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of a commodore PET</p>
+        </div>
+
+        <!--MISC3-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_tokyu_8500.png" data-lightbox="image-1" data-title="tokyu 8500">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_tokyu_8500.png">
+        </a>
+        </div>
+        
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of a <a href="https://en.wikipedia.org/wiki/Tokyu_8500_series">Tokyu 8500 series commuter train</a></p>
+        </div>
+
+        <!--MISC4-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_Vic_Viper_T_301.png" data-lightbox="image-1" data-title="Vic Viper">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_Vic_Viper_T_301.png">
+        </a>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of a Vic Viper T-301</p>
+        </div>
+        
+		<!--MISC5-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_famicom_cartridge.png" data-lightbox="image-1" data-title="FC cartridges">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_famicom_cartridge.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of fictional famicom cartridges</p>
+        </div>
+		
+		<!--MISC6-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_UI_WM.png" data-lightbox="image-1" data-title="WM UI">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_UI_WM.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of World Machine UI</p>
+        </div>
+		
+		<!--MISC7-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_ice_cream_factory.png" data-lightbox="image-1" data-title="ice cream tileset">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_ice_cream_factory.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of ice cream factory tileset</p>
+        </div>
+		
+		<!--MISC8-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_px.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/pixel_art_badge_collection.png" data-lightbox="image-1" data-title="badge">
+        <img class="center_content" src="../website_QK/img/showcase/pixel_art_badge_collection.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Pixel Art of a badge collection</p>
+        </div>
+
+        <!--section end-->
+        </div>
+
+        <!--section 4-->
+        <div class="div_container_MISC">
+        <div class="div_MISC">
+        <p>Selective Expression: Digital Art</p>
+        </div>
+
+        <div class="div_MISC">
+        <img class="center_content" src="../website_QK/img/img_cat.png" width="150" height="150">
+        </div>
+
+		<!--MISC1-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_canbus_peace.png" data-lightbox="image-1" data-title="peace">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_canbus_peace.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of canvas: peace</p>
+        </div>
+
+		<!--MISC2-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_canbus_color.png" data-lightbox="image-1" data-title="color">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_canbus_color.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of canvas: color</p>
+        </div>
+		
+		<!--MISC3-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_canbus_grass.png" data-lightbox="image-1" data-title="grass">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_canbus_grass.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of canvas: grass</p>
+        </div>
+
+		<!--MISC4-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_canbus_god.png" data-lightbox="image-1" data-title="god">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_canbus_god.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of canvas: god</p>
+        </div>
+		
+		<!--MISC5-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_one_man_army.png" data-lightbox="image-1" data-title="ego1">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_one_man_army.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: ego</p>
+        </div>
+
+		<!--MISC6-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_vessel.png" data-lightbox="image-1" data-title="ego2">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_vessel.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: ego</p>
+        </div>
+		
+		<!--MISC7-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_feels.png" data-lightbox="image-1" data-title="ego3">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_feels.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: ego</p>
+        </div>
+
+		<!--MISC8-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_itbelikethat.png" data-lightbox="image-1" data-title="ego4">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_itbelikethat.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: ego</p>
+        </div>
+		
+		<!--MISC9-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_chr_NAK21.png" data-lightbox="image-1" data-title="NAK21">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_chr_NAK21.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: NAK21</p>
+        </div>
+
+		<!--MISC10-->
+        <div class ="div_MISC">
+        <div class="div_wrap">
+        <img class="center_content_alt" src="../website_QK/img/stamp_dg.png">
+        <div>
+
+        <div class="div_disp">
+        <a href="../website_QK/img/showcase/digital_art_chr_kate.png" data-lightbox="image-1" data-title="kate">
+        <img class="center_content" src="../website_QK/img/showcase/digital_art_chr_kate.png">
+        </a>
+        </div>
+
+        </div>
+        </div>
+        <p class="div_MISC_desc">Digital Art of OC character: Kate</p>
+        </div>
+
+        <!--section end-->
+        </div>
+
+        <!--style div end-->
+        </div>
+
+        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39377591&main=1"></script><noscript><img class="img_center" src="//counter1.fc2.com/counter_img.php?id=39377591&main=1" /></noscript>
+
+    <!--page end-->
+    </div>
+    <br>
+    
+    <script src="../website_QK/lightbox_dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
